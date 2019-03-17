@@ -1,0 +1,19 @@
+.jumbotron {
+    margin-bottom: 0px;
+    padding:0px;
+    padding-left:15px;
+    padding-bottom: 10px;
+}
+
+.main-image {
+    padding: 0px;
+}
+
+.main-links {
+    float: right;
+}
+
+#findFriends {
+    margin-bottom:15px;
+    text-align: center;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container" id="the-whole-survey">
+
+        <div class="jumbotron">
+            <h1 class="display-4">Friend Finder</h1>
+            <p class="lead">It is now Survey Time.</p>
+            <p>Answer the prompts for points! Or friends in this case.</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <h2>About You</h2>
+                <label for="userName">Name</label>
+                <input type="name" class="form-control" id="userName" placeholder="Your Name Here">
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Link to Photo</label>
+                <input type="photoURL" class="form-control" id="userPhoto"
+                    placeholder="Please link to an image of yourself">
+            </div>
+
+            <div class="form-group">
+                <h2>Question One</h2>
+                <label for="questionOne">Do you hear the voices too?</label>
+                <select class="form-control" id="questionOne">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Two</h2>
+                <label for="questionTwo">You prefer The Wire over The Sopranos?</label>
+                <select class="form-control" id="questionTwo">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Three</h2>
+                <label for="questionThree">You would prefer to travel to the past rather than the future.</label>
+                <select class="form-control" id="questionThree">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Four</h2>
+                <label for="questionFour">You agree with this statement.</label>
+                <select class="form-control" id="questionFour">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Five</h2>
+                <label for="questionFive">Given the opportunity, you would drop everything to build a snowman.</label>
+                <select class="form-control" id="questionFive">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Six</h2>
+                <label for="questionSix">Can I have your Netflix password?</label>
+                <select class="form-control" id="questionSix">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Seven</h2>
+                <label for="questionSeven">Have you stepped on more than 10 legos over the years?</label>
+                <select class="form-control" id="questionSeven">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Eight</h2>
+                <label for="questionEight">Can Ferarri hope to catch up to Mercedes in Formula One this year?</label>
+                <select class="form-control" id="questionEight">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Nine</h2>
+                <label for="questionNine">Icecream is better than yogurt.</label>
+                <select class="form-control" id="questionNine">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h2>Question Ten</h2>
+                <label for="questionTen">Is this a trick question?</label>
+                <select class="form-control" id="questionTen">
+                    <option>1 (strongly disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary" id="findFriends" type="submit">Click here to find a friend!</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
