@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 </head>
@@ -24,145 +28,242 @@
             <p>Answer the prompts for points! Or friends in this case.</p>
         </div>
 
+        <div class="main-links">
+            <p>
+                <a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a>
+                |
+                <a class="grey-text text-lighten-3" href="https://github.com/savagedetective/FriendFinder">GitHub
+                    Repo</a>
+            </p>
+        </div>
+
         <form>
             <div class="form-group">
                 <h2>About You</h2>
-                <label for="userName">Name</label>
-                <input type="name" class="form-control" id="userName" placeholder="Your Name Here">
+                <label for="user-name">Name</label>
+                <input type="name" class="form-control" id="user-name" placeholder="Your Name Here">
             </div>
 
             <div class="form-group">
-                <label for="userName">Link to Photo</label>
-                <input type="photoURL" class="form-control" id="userPhoto"
+                <label for="user-photo">Link to Photo</label>
+                <input type="photoURL" class="form-control" id="user-photo"
                     placeholder="Please link to an image of yourself">
             </div>
 
             <div class="form-group">
                 <h2>Question One</h2>
-                <label for="questionOne">Do you hear the voices too?</label>
+                <label for="questionOne">Do you hear the voices too? (1 Strongly Disagree - 5 Strongly Agree)</label>
                 <select class="form-control" id="questionOne">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Two</h2>
-                <label for="questionTwo">You prefer The Wire over The Sopranos?</label>
+                <label for="questionTwo">You prefer The Wire over The Sopranos? (1 Strongly Disagree - 5 Strongly
+                    Agree)</label>
                 <select class="form-control" id="questionTwo">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Three</h2>
-                <label for="questionThree">You would prefer to travel to the past rather than the future.</label>
+                <label for="questionThree">You would prefer to travel to the past rather than the future. (1 Strongly
+                    Disagree - 5 Strongly Agree)</label>
                 <select class="form-control" id="questionThree">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Four</h2>
-                <label for="questionFour">You agree with this statement.</label>
+                <label for="questionFour">You agree with this statement. (1 Strongly Disagree - 5 Strongly
+                    Agree)</label>
                 <select class="form-control" id="questionFour">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Five</h2>
-                <label for="questionFive">Given the opportunity, you would drop everything to build a snowman.</label>
+                <label for="questionFive">Given the opportunity, you would drop everything to build a snowman. (1
+                    Strongly Disagree - 5 Strongly Agree)</label>
                 <select class="form-control" id="questionFive">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Six</h2>
-                <label for="questionSix">Can I have your Netflix password?</label>
+                <label for="questionSix">Can I have your Netflix password? (1 Strongly Disagree - 5 Strongly
+                    Agree)</label>
                 <select class="form-control" id="questionSix">
-                    <option>1 (strongly disagree)</option>
+                    <option>1 </option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Seven</h2>
-                <label for="questionSeven">Have you stepped on more than 10 legos over the years?</label>
+                <label for="questionSeven">Have you stepped on more than 10 legos over the years? (1 Strongly Disagree -
+                    5 Strongly Agree)</label>
                 <select class="form-control" id="questionSeven">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Eight</h2>
-                <label for="questionEight">Can Ferarri hope to catch up to Mercedes in Formula One this year?</label>
+                <label for="questionEight">Can Ferarri hope to catch up to Mercedes in Formula One this year? (1
+                    Strongly Disagree - 5 Strongly Agree)</label>
                 <select class="form-control" id="questionEight">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Nine</h2>
-                <label for="questionNine">Icecream is better than yogurt.</label>
+                <label for="questionNine">Icecream is better than yogurt. (1 Strongly Disagree - 5 Strongly
+                    Agree)</label>
                 <select class="form-control" id="questionNine">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <h2>Question Ten</h2>
-                <label for="questionTen">Is this a trick question?</label>
+                <label for="questionTen">Is this a trick question? (1 Strongly Disagree - 5 Strongly Agree)</label>
                 <select class="form-control" id="questionTen">
-                    <option>1 (strongly disagree)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (strongly agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
-            <button class="btn btn-primary" id="findFriends" type="submit">Click here to find a friend!</button>
+            <button class="btn btn-primary" id="findFriends" type="button" data-toggle="modal"
+                data-target="#theModal">Click here to find a friend!</button>
 
         </form>
+
+        <!-- HERE IS A MODAL. BEWARE.-->
+        <div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Here is your new Friend</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <h5 id="userMatchName"></h5>
+                        <img id="userMatchPic" src="" alt="Picture of your match" width=250px>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //on click event add user inputs to friend array
+        $("#findFriends").on("click", function (event) {
+            event.preventDefault();
+
+            console.log("Button has been clicked");
+
+            var newFriend = {
+                name: $("#user-name").val().trim(),
+                photo: $("#user-photo").val().trim(),
+                scores: [
+                    $('#questionOne').val(),
+                    $('#questionTwo').val(),
+                    $('#questionThree').val(),
+                    $('#questionFour').val(),
+                    $('#questionFive').val(),
+                    $('#questionSix').val(),
+                    $('#questionSeven').val(),
+                    $('#questionEight').val(),
+                    $('#questionNine').val(),
+                    $('#questionTen').val()
+                ]
+            };
+
+            console.log(newFriend);
+
+            //sends newFriend to server, grabs name and photo of match
+            $.post("/api/friends", newFriend)
+                .then(function (data) {
+                $("#userMatchName").text(data.name);
+                $("#userMatchPic").attr("src", data.photo);
+            });
+
+            //clears form
+            $("#user-name").val("");
+            $("#user-photo").val("");
+            $('#questionOne').val("");
+            $('#questionTwo').val("");
+            $('#questionThree').val("");
+            $('#questionFour').val("");
+            $('#questionFive').val("");
+            $('#questionSix').val("");
+            $('#questionSeven').val("");
+            $('#questionEight').val("");
+            $('#questionNine').val("");
+            $('#questionTen').val("");
+
+        });
+    });
+
+</script>
