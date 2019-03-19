@@ -19,25 +19,25 @@ module.exports = function(app) {
         //placeholder for current best friend
         var currentMatch = 0;
 
-        //runs through friends in FriendData and calculates absolute difference between scores from user input
+        //This runs for each friend found in friendData
         for (var i = 0; i < friendData.length; i++) {
 
             var scoreDifference = 0;
 
+            //once per friend, each score is compared against each user input score
             for (var j = 0; j < userScores.length; j++) {
+
+                //The difference between each score comparison is added up to one number
                 scoreDifference += (Math.abs(friendData[i].scores[j] - userScores[j]));
+
+                //cycles through each score differential and constantly updates best match
+                if (scoreDifferenceArray[j] <= scoreDifferenceArray[currentMatch]) {
+                    currentMatch = j;
+                }
             }
 
+            //once per friend, the overall score differential is added to scoreDifferenceArray
             scoreDifferenceArray.push(scoreDifference);
-
-        }
-
-        //runs through score differences to find best match
-        for (var k = 0; k < scoreDifferenceArray.length; k++) {
-
-            if (scoreDifferenceArray[k] <= scoreDifferenceArray[currentMatch]) {
-                currentMatch = k;
-            }
 
         }
 
